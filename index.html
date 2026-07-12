@@ -59,6 +59,17 @@
 
 </head>
 
+    <script>
+function checkPassword() {
+    let password = document.getElementById("password").value;
+
+    if (password === "Prince") {
+        alert("Correct!");
+    } else {
+        alert("Try again.");
+    }
+}
+</script>
 <body>
 <div class="container">
 
@@ -69,11 +80,11 @@
 
     <h1>Password</h1>
 
-        <input type="password" placeholder="Enter password">
+       <input type="password" id="password" placeholder="Enter password">
 
         <br>
 
-        <button>Enter</button>
+        <button onclick="checkPassword()">Enter</button>
 
     </div>
 
