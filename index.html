@@ -64,7 +64,13 @@ function checkPassword() {
     let password = document.getElementById("password").value;
 
     if (password === "Prince") {
-        alert("Correct!");
+       document.querySelector("svg").style.transform = "scale(8)";
+document.querySelector("svg").style.transition = "1.2s";
+
+setTimeout(function () {
+    document.body.style.transition = "1s";
+    document.body.style.opacity = "0";
+}, 700);
     } else {
         alert("Try again.");
     }
