@@ -72,6 +72,11 @@ document.querySelector("svg").style.transition = "1.2s";
 setTimeout(function () {
     document.body.style.transition = "1s";
     document.body.style.opacity = "0";
+
+    setTimeout(function () {
+        window.location.href = "welcome.html";
+    }, 1000);
+
 }, 700);
     } else {
         alert("Try again.");
