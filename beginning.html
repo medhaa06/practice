@@ -30,10 +30,31 @@
 
         h1 {
             font-family: "Cormorant Garamond", Georgia, serif;
-            font-size: 40px;
-            font-weight: 400;
-            letter-spacing: 4px;
-            margin: 0 0 18px 0;
+            font-size: 42px;
+            font-weight: 500;
+            letter-spacing: 3px;
+            margin: 0 0 12px 0;
+        }
+
+        .divider {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+            margin-bottom: 16px;
+        }
+
+        .divider span:first-child,
+        .divider span:last-child {
+            width: 45px;
+            height: 1px;
+            background: #1E1E1E;
+            opacity: 0.65;
+        }
+
+        .tiny-heart {
+            font-size: 12px;
+            color: #1E1E1E;
         }
 
         .intro {
@@ -51,6 +72,12 @@
 
         <h1>HOW IT STARTED...</h1>
 
+        <div class="divider">
+            <span></span>
+            <span class="tiny-heart">♥</span>
+            <span></span>
+        </div>
+
         <p class="intro">
             Every story has a beginning. This is ours.
         </p>
@@ -60,3 +87,5 @@
 </body>
 
 </html>
+
+
