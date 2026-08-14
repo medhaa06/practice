@@ -74,6 +74,25 @@ p{
     transform:rotate(-15deg);
     opacity:0.95;
 }
+.next-arrow {
+    display: inline-block;
+    margin-top: 30px;
+    font-size: 28px;
+    color: inherit;
+    text-decoration: none;
+    cursor: pointer;
+    animation: gentleFloat 2s ease-in-out infinite;
+}
+
+@keyframes gentleFloat {
+    0%, 100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(6px);
+    }
+}    
 </style>
 
 </head>
@@ -92,6 +111,7 @@ p{
 One year of us.<br>
 A lifetime to go.
 </p>
+<a href="beginning.html" class="next-arrow">↓</a>    
 <img src="images/image.png" class="flowers">
 <img src="images/image (1).png" class="envelope">
 <img src="images/image (2).png" class="lock">
